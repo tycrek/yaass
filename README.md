@@ -25,6 +25,18 @@ docker compose up
 
 For support, [visit the Discord](https://discord.gg/wGZYt5fasY).
 
+## Using HTTPS
+
+For HTTPS support, you must configure a reverse proxy. I recommend [Caddy] but any reverse proxy works fine (such as Apache or Nginx). A sample config for Caddy is provided below:
+
+```
+ass.example.com {
+    reverse_proxy localhost:40115
+}
+```
+
+[Caddy]: https://caddyserver.com/
+
 ### Configure ShareX
 
 Add a new **Custom uploader** and configure it as shown:
