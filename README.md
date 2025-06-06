@@ -31,7 +31,7 @@ For HTTPS support, you must configure a reverse proxy. I recommend [Caddy] but a
 
 ```
 ass.example.com {
-    reverse_proxy localhost:40115
+    reverse_proxy localhost:6969
 }
 ```
 
